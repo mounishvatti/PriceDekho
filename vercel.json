@@ -1,0 +1,8 @@
+{
+    "functions": {
+      "api/cron": {
+        "maxDuration": 60
+      }
+    }
+  }
+  
