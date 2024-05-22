@@ -47,7 +47,7 @@ const Modal = ({ productId }: Props) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0" /> 
+              {/* <Dialog.Overlay className="fixed inset-0" />  */}
             </Transition.Child>
 
             <span
