@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/cron.js": {
+      "/api/cron": {
         "maxDuration": 60
       }
     }
