@@ -42,6 +42,13 @@ export async function scrapeAmazonProduct(url: string) {
             $('.a-size-base.a-color-price')
         );
 
+        // const ogPrice = document.querySelector("#corePriceDisplay_mobile_feature_div > div > div.a-section.a-spacing-small.aok-align-center > span > span.aok-relative > span.a-size-small.a-color-secondary.aok-align-center.basisPrice > span > span:nth-child(2)")?.textContent;
+
+        // let price = ogPrice ?? '';
+        // const originalPrice = price.replace(/\$/g, '');
+        // // console.log(cleanPrice); // Outputs: 799.50
+
+
         const outOfStock = $('#availability span').text().trim().toLowerCase() === 'currently unavailable';
 
         const images =
@@ -72,6 +79,7 @@ export async function scrapeAmazonProduct(url: string) {
             title,
             currentPrice: Number(currentPrice) || Number(originalPrice),
             originalPrice: Number(originalPrice) || Number(currentPrice),
+            // ogPrice: Number(ogPrice) || Number(currentPrice),
             priceHistory: [],
             discountRate: Number(discountRate),
             category: 'category',

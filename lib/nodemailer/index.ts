@@ -29,14 +29,14 @@ export async function generateEmailBody(
       subject = `Welcome to Price Tracking for ${shortenedTitle}`;
       body = `
         <div>
-          <h2>Welcome to PriceWise 🚀</h2>
+          <h2>Welcome to PriceDekho 🚀</h2>
           <p>You are now tracking ${product.title}.</p>
           <p>Here's an example of how you'll receive updates:</p>
           <div style="border: 1px solid #ccc; padding: 10px; background-color: #f8f8f8;">
             <h3>${product.title} is back in stock!</h3>
             <p>We're excited to let you know that ${product.title} is now back in stock.</p>
             <p>Don't miss out - <a href="${product.url}" target="_blank" rel="noopener noreferrer">buy it now</a>!</p>
-            <img src="https://i.ibb.co/pwFBRMC/Screenshot-2023-09-26-at-1-47-50-AM.png" alt="Product Image" style="max-width: 100%;" />
+            <img src="https://i.postimg.cc/1RjLczhc/Screenshot-2024-05-23-at-10-47-56-PM.png alt="Product Image" style="max-width: 100%;" />
           </div>
           <p>Stay tuned for more updates on ${product.title} and other products you're tracking.</p>
         </div>
