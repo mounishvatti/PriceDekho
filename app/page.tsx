@@ -26,7 +26,7 @@ const Home = async () => {
               <span className='text-primary'> PriceDekho</span>
             </h1>
             <p className='mt-6'>
-              Powerful, self-serve product and growth analytics to help you convert, engage and retain more.
+              Powerful eCommerce price tracking tool to help you Track, Compare, and Save whenever you are trying to make an online purchase.
             </p>
             
             <Searchbar />
