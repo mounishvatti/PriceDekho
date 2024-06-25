@@ -41,7 +41,7 @@ const Home = async () => {
       </section>
 
       <section className='trending-section'>
-        <h2 className='section-text'>Trending</h2>
+        <h2 className='section-text'>Your items 🛍️</h2>
 
         <div className='flex flex-wrap gap-x-8 gap-y-16'>
           {allProducts?.map((product) => (
@@ -49,12 +49,12 @@ const Home = async () => {
           ))}
         </div>
       </section>
-      <section>
+      <section className='flex justify-center flex-col'>
         <h1 className='section-text flex justify-center'>Like Price<span className='text-primary'>Dekho</span>?</h1>
-        <h2 className='section-text flex justify-center'>Give us a star on GitHub :) </h2>
+        
         <Link href="https://github.com/mounishvatti/PriceDekho" target="_blank" className='flex justify-center pt-6 pb-20'>
             <Button className="inline-flex items-center gap-2 rounded-md bg-gray-900 py-3 px-5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
-              <FaRegHeart /> Star on GitHub
+              <FaRegHeart /> Star us on GitHub
             </Button>
         </Link>
       </section>
